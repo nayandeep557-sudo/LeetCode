@@ -1,0 +1,238 @@
+import java.util.*;
+class Solution {
+    public List<Integer> maxActiveSectionsAfterTrade(String s, int[][] queries) {
+        int n = s.length();
+        int totalOnesInS = 0;
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) == '1') totalOnesInS++;
+        }
+        List<int[]> zeroBlocks = new ArrayList<>();
+        int ptr = 0;
+        while (ptr < n) {
+            if (s.charAt(ptr) == '0') {
+                int start = ptr;
+                while (ptr < n && s.charAt(ptr) == '0') {
+                    ptr++;
+                }
+                int end = ptr - 1;
+                zeroBlocks.add(new int[]{start, end, end - start + 1});
+            } else {
+                ptr++;
+            }
+        }
+        int M = zeroBlocks.size();
+        if (M == 0) {
+            List<Integer> ans = new ArrayList<>(queries.length);
+            for (int i = 0; i < queries.length; i++) ans.add(totalOnesInS);
+            return ans;
+        }
+        int[] zero_start = new int[M];
+        int[] zero_end = new int[M];
+        int[] zero_len = new int[M];
+        for (int i = 0; i < M; i++) {
+            zero_start[i] = zeroBlocks.get(i)[0];
+            zero_end[i] = zeroBlocks.get(i)[1];
+            zero_len[i] = zeroBlocks.get(i)[2];
+        }
+        int[] one_len = new int[M - 1];
+        for (int i = 0; i < M - 1; i++) {
+            one_len[i] = zero_start[i + 1] - zero_end[i] - 1;
+        }
+        int[] pair_sum = new int[M - 1];
+        for (int i = 0; i < M - 1; i++) {
+            pair_sum[i] = zero_len[i] + zero_len[i + 1];
+        }
+        int[] next_zero = new int[n];
+        int cur = 0;
+        for (int i = 0; i < n; i++) {
+            while (cur < M && zero_end[cur] < i) {
+                cur++;
+            }
+            next_zero[i] = (cur < M) ? cur : -1;
+        }
+        int[] prev_zero = new int[n];
+        cur = M - 1;
+        for (int i = n - 1; i >= 0; i--) {
+            while (cur >= 0 && zero_start[cur] > i) {
+                cur--;
+            }
+            prev_zero[i] = cur;
+        }
+        SparseTableMax stZeroMax = new SparseTableMax(zero_len);
+        SparseTableMin stOneMin = (M > 1) ? new SparseTableMin(one_len) : null;
+        SparseTableValueMax stPairMax = (M > 1) ? new SparseTableValueMax(pair_sum) : null;
+        List<Integer> answer = new ArrayList<>(queries.length);
+        for (int[] q : queries) {
+            int l = q[0];
+            int r = q[1];
+            int j_first = next_zero[l];
+            int j_last = prev_zero[r];
+            if (j_first == -1 || j_last == -1 || j_first > j_last || zero_start[j_first] > r || zero_end[j_last] < l) {
+                answer.add(totalOnesInS);
+                continue;
+            }
+            int k = j_last - j_first + 1;
+            if (k < 2) {
+                answer.add(totalOnesInS);
+                continue;
+            }
+            int b_first = Math.min(zero_end[j_first], r) - Math.max(zero_start[j_first], l) + 1;
+            int b_last = Math.min(zero_end[j_last], r) - Math.max(zero_start[j_last], l) + 1;
+            int maxGain = 0;
+            if (k == 2) {
+                maxGain = b_first + b_last;
+            } else if (k == 3) {
+                maxGain = Math.max(b_first + zero_len[j_first + 1], zero_len[j_first + 1] + b_last);
+            } else {
+                int p1 = b_first + zero_len[j_first + 1];
+                int p2 = zero_len[j_last - 1] + b_last;
+                int p3 = 0;
+                if (j_first + 1 <= j_last - 2) {
+                    p3 = stPairMax.queryMax(j_first + 1, j_last - 2);
+                }
+                maxGain = Math.max(p1, Math.max(p2, p3));
+            }
+            List<int[]> candidatesJ = new ArrayList<>();
+            candidatesJ.add(new int[]{j_first, b_first});
+            candidatesJ.add(new int[]{j_last, b_last});
+            if (j_first + 1 <= j_last - 1) {
+                List<Integer> topJ = stZeroMax.getTopKIndices(j_first + 1, j_last - 1, 3);
+                for (int jIdx : topJ) {
+                    candidatesJ.add(new int[]{jIdx, zero_len[jIdx]});
+                }
+            }
+            List<Integer> topI = stOneMin.getTopKIndices(j_first, j_last - 1, 3);
+            for (int[] candJ : candidatesJ) {
+                int jVal = candJ[0];
+                int bVal = candJ[1];
+                for (int iVal : topI) {
+                    if (iVal != jVal - 1 && iVal != jVal) {
+                        maxGain = Math.max(maxGain, bVal - one_len[iVal]);
+                    }
+                }
+            }
+            answer.add(totalOnesInS + maxGain);
+        }
+        return answer;
+    }
+}
+class SparseTableMax {
+    int[] val;
+    int[][] st;
+    int[] log;
+    public SparseTableMax(int[] val) {
+        this.val = val;
+        int n = val.length;
+        if (n == 0) return;
+        log = new int[n + 1];
+        for (int i = 2; i <= n; i++) log[i] = log[i / 2] + 1;
+        int maxLog = log[n] + 1;
+        st = new int[maxLog][n];
+        for (int i = 0; i < n; i++) st[0][i] = i;
+        for (int j = 1; j < maxLog; j++) {
+            for (int i = 0; i + (1 << j) <= n; i++) {
+                int left = st[j - 1][i];
+                int right = st[j - 1][i + (1 << (j - 1))];
+                st[j][i] = (val[left] >= val[right]) ? left : right;
+            }
+        }
+    }
+    public int queryIndex(int L, int R) {
+        int j = log[R - L + 1];
+        int left = st[j][L];
+        int right = st[j][R - (1 << j) + 1];
+        return (val[left] >= val[right]) ? left : right;
+    }
+    public List<Integer> getTopKIndices(int L, int R, int K) {
+        List<Integer> res = new ArrayList<>();
+        if (L > R) return res;
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(b[2], a[2]));
+        int best = queryIndex(L, R);
+        pq.add(new int[]{L, R, val[best], best});
+        while (!pq.isEmpty() && res.size() < K) {
+            int[] top = pq.poll();
+            int l = top[0], r = top[1], idx = top[3];
+            res.add(idx);
+            if (l <= idx - 1) {
+                int bLeft = queryIndex(l, idx - 1);
+                pq.add(new int[]{l, idx - 1, val[bLeft], bLeft});
+            }
+            if (idx + 1 <= r) {
+                int bRight = queryIndex(idx + 1, r);
+                pq.add(new int[]{idx + 1, r, val[bRight], bRight});
+            }
+        }
+        return res;
+    }
+}
+class SparseTableMin {
+    int[] val;
+    int[][] st;
+    int[] log;
+    public SparseTableMin(int[] val) {
+        this.val = val;
+        int n = val.length;
+        if (n == 0) return;
+        log = new int[n + 1];
+        for (int i = 2; i <= n; i++) log[i] = log[i / 2] + 1;
+        int maxLog = log[n] + 1;
+        st = new int[maxLog][n];
+        for (int i = 0; i < n; i++) st[0][i] = i;
+        for (int j = 1; j < maxLog; j++) {
+            for (int i = 0; i + (1 << j) <= n; i++) {
+                int left = st[j - 1][i];
+                int right = st[j - 1][i + (1 << (j - 1))];
+                st[j][i] = (val[left] <= val[right]) ? left : right;
+            }
+        }
+    }
+    public int queryIndex(int L, int R) {
+        int j = log[R - L + 1];
+        int left = st[j][L];
+        int right = st[j][R - (1 << j) + 1];
+        return (val[left] <= val[right]) ? left : right;
+    }
+    public List<Integer> getTopKIndices(int L, int R, int K) {
+        List<Integer> res = new ArrayList<>();
+        if (L > R) return res;
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(a[2], b[2]));
+        int best = queryIndex(L, R);
+        pq.add(new int[]{L, R, val[best], best});
+        while (!pq.isEmpty() && res.size() < K) {
+            int[] top = pq.poll();
+            int l = top[0], r = top[1], idx = top[3];
+            res.add(idx);
+            if (l <= idx - 1) {
+                int bLeft = queryIndex(l, idx - 1);
+                pq.add(new int[]{l, idx - 1, val[bLeft], bLeft});
+            }
+            if (idx + 1 <= r) {
+                int bRight = queryIndex(idx + 1, r);
+                pq.add(new int[]{idx + 1, r, val[bRight], bRight});
+            }
+        }
+        return res;
+    }
+}
+class SparseTableValueMax {
+    int[][] st;
+    int[] log;
+    public SparseTableValueMax(int[] val) {
+        int n = val.length;
+        if (n == 0) return;
+        log = new int[n + 1];
+        for (int i = 2; i <= n; i++) log[i] = log[i / 2] + 1;
+        int maxLog = log[n] + 1;
+        st = new int[maxLog][n];
+        for (int i = 0; i < n; i++) st[0][i] = val[i];
+        for (int j = 1; j < maxLog; j++) {
+            for (int i = 0; i + (1 << j) <= n; i++) {
+                st[j][i] = Math.max(st[j - 1][i], st[j - 1][i + (1 << (j - 1))]);
+            }
+        }
+    }
+    public int queryMax(int L, int R) {
+        int j = log[R - L + 1];
+        return Math.max(st[j][L], st[j][R - (1 << j) + 1]);
+    }
+}
