@@ -11,6 +11,7 @@ Upploading my daily LeetCode solutions
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0067-add-binary) |
+| [0070-climbing-stairs](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0070-climbing-stairs) |
 | [3875-construct-uniform-parity-array-i](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3875-construct-uniform-parity-array-i) |
 ## String
 |  |
@@ -33,4 +34,12 @@ Upploading my daily LeetCode solutions
 |  |
 | ------- |
 | [3904-smallest-stable-index-ii](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3904-smallest-stable-index-ii) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0070-climbing-stairs) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
