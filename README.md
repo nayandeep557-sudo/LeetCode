@@ -29,6 +29,7 @@ Upploading my daily LeetCode solutions
 ## Array
 |  |
 | ------- |
+| [3483-unique-3-digit-even-numbers](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3483-unique-3-digit-even-numbers) |
 | [3875-construct-uniform-parity-array-i](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3875-construct-uniform-parity-array-i) |
 | [3904-smallest-stable-index-ii](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3904-smallest-stable-index-ii) |
 ## Prefix Sum
@@ -55,4 +56,16 @@ Upploading my daily LeetCode solutions
 |  |
 | ------- |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
+## Hash Table
+|  |
+| ------- |
+| [3483-unique-3-digit-even-numbers](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3483-unique-3-digit-even-numbers) |
+## Recursion
+|  |
+| ------- |
+| [3483-unique-3-digit-even-numbers](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3483-unique-3-digit-even-numbers) |
+## Enumeration
+|  |
+| ------- |
+| [3483-unique-3-digit-even-numbers](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3483-unique-3-digit-even-numbers) |
 <!---LeetCode Topics End-->
