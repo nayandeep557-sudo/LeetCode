@@ -12,6 +12,7 @@ Upploading my daily LeetCode solutions
 | ------- |
 | [0067-add-binary](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0070-climbing-stairs) |
+| [0836-rectangle-overlap](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0836-rectangle-overlap) |
 | [3870-count-commas-in-range](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3870-count-commas-in-range) |
 | [3875-construct-uniform-parity-array-i](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3875-construct-uniform-parity-array-i) |
 ## String
@@ -82,4 +83,8 @@ Upploading my daily LeetCode solutions
 |  |
 | ------- |
 | [0835-image-overlap](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0835-image-overlap) |
+## Geometry
+|  |
+| ------- |
+| [0836-rectangle-overlap](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0836-rectangle-overlap) |
 <!---LeetCode Topics End-->
