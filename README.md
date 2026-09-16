@@ -13,6 +13,7 @@ Upploading my daily LeetCode solutions
 | [0067-add-binary](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0070-climbing-stairs) |
 | [0836-rectangle-overlap](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0836-rectangle-overlap) |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [3870-count-commas-in-range](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3870-count-commas-in-range) |
 | [3875-construct-uniform-parity-array-i](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3875-construct-uniform-parity-array-i) |
 ## String
@@ -38,11 +39,13 @@ Upploading my daily LeetCode solutions
 ## Prefix Sum
 |  |
 | ------- |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [3904-smallest-stable-index-ii](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3904-smallest-stable-index-ii) |
 ## Dynamic Programming
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0070-climbing-stairs) |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 ## Memoization
 |  |
 | ------- |
@@ -87,4 +90,8 @@ Upploading my daily LeetCode solutions
 |  |
 | ------- |
 | [0836-rectangle-overlap](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0836-rectangle-overlap) |
+## Combinatorics
+|  |
+| ------- |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 <!---LeetCode Topics End-->
