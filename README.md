@@ -33,6 +33,7 @@ Upploading my daily LeetCode solutions
 | ------- |
 | [0088-merge-sorted-array](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0835-image-overlap](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0835-image-overlap) |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [3483-unique-3-digit-even-numbers](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3483-unique-3-digit-even-numbers) |
 | [3875-construct-uniform-parity-array-i](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3875-construct-uniform-parity-array-i) |
 | [3904-smallest-stable-index-ii](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3904-smallest-stable-index-ii) |
@@ -45,6 +46,7 @@ Upploading my daily LeetCode solutions
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0070-climbing-stairs) |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 ## Memoization
 |  |
@@ -65,6 +67,7 @@ Upploading my daily LeetCode solutions
 ## Hash Table
 |  |
 | ------- |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [3483-unique-3-digit-even-numbers](https://github.com/nayandeep557-sudo/LeetCode/tree/master/3483-unique-3-digit-even-numbers) |
 ## Recursion
 |  |
@@ -94,4 +97,12 @@ Upploading my daily LeetCode solutions
 |  |
 | ------- |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
+## Binary Search
+|  |
+| ------- |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
+## Sliding Window
+|  |
+| ------- |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 <!---LeetCode Topics End-->
