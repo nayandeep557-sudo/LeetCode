@@ -55,14 +55,17 @@ Upploading my daily LeetCode solutions
 ## Tree
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0100-same-tree) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Depth-First Search
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0100-same-tree) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Binary Tree
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0100-same-tree) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Hash Table
 |  |
@@ -105,4 +108,8 @@ Upploading my daily LeetCode solutions
 |  |
 | ------- |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0100-same-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0100-same-tree) |
 <!---LeetCode Topics End-->
