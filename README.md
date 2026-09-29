@@ -38,6 +38,7 @@ Upploading my daily LeetCode solutions
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0088-merge-sorted-array) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0835-image-overlap](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0835-image-overlap) |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
@@ -67,6 +68,7 @@ Upploading my daily LeetCode solutions
 | ------- |
 | [0100-same-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0101-symmetric-tree) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Depth-First Search
 |  |
@@ -79,6 +81,7 @@ Upploading my daily LeetCode solutions
 | ------- |
 | [0100-same-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0101-symmetric-tree) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Hash Table
 |  |
@@ -140,4 +143,12 @@ Upploading my daily LeetCode solutions
 | ------- |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 <!---LeetCode Topics End-->
