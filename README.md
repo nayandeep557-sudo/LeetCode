@@ -21,6 +21,7 @@ Upploading my daily LeetCode solutions
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0020-valid-parentheses) |
 | [0067-add-binary](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0067-add-binary) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
@@ -136,11 +137,13 @@ Upploading my daily LeetCode solutions
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0020-valid-parentheses) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 ## Bracket Sequences
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0020-valid-parentheses) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 ## Divide and Conquer
