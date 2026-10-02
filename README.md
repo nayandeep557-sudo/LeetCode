@@ -22,6 +22,7 @@ Upploading my daily LeetCode solutions
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0020-valid-parentheses) |
+| [0022-generate-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0022-generate-parentheses) |
 | [0067-add-binary](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0067-add-binary) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
@@ -56,6 +57,7 @@ Upploading my daily LeetCode solutions
 ## Dynamic Programming
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0022-generate-parentheses) |
 | [0070-climbing-stairs](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0070-climbing-stairs) |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
@@ -144,6 +146,7 @@ Upploading my daily LeetCode solutions
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0020-valid-parentheses) |
+| [0022-generate-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0022-generate-parentheses) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 ## Divide and Conquer
@@ -154,4 +157,8 @@ Upploading my daily LeetCode solutions
 |  |
 | ------- |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
+## Backtracking
+|  |
+| ------- |
+| [0022-generate-parentheses](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0022-generate-parentheses) |
 <!---LeetCode Topics End-->
