@@ -72,12 +72,14 @@ Upploading my daily LeetCode solutions
 | [0100-same-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0101-symmetric-tree) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
+| [0110-balanced-binary-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0110-balanced-binary-tree) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0100-same-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0101-symmetric-tree) |
+| [0110-balanced-binary-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0110-balanced-binary-tree) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Binary Tree
 |  |
@@ -85,6 +87,7 @@ Upploading my daily LeetCode solutions
 | [0100-same-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0101-symmetric-tree) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
+| [0110-balanced-binary-tree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/0110-balanced-binary-tree) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/nayandeep557-sudo/LeetCode/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Hash Table
 |  |
